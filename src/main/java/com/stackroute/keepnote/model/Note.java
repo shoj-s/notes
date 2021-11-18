@@ -1,5 +1,6 @@
 package com.stackroute.keepnote.model;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /*
@@ -13,6 +14,12 @@ public class Note {
 	 * setters for the fields. The value of createdAt should not be accepted from
 	 * the user but should be always initialized with the system date
 	 */
+	private int noteId;
+	private String noteTitle;
+	private String noteContent;
+	private String noteStatus;
+	private LocalDateTime createdAt;
+	
 
 	public Note() {
 	}
@@ -20,43 +27,47 @@ public class Note {
 	/* All the getters/setters definition should be implemented here */
 
 	public int getNoteId() {
-		return 0;
-
+		return noteId;
 	}
 
 	public void setNoteId(int intid) {
+		this.noteId=noteId;
 
 	}
 
 	public String getNoteTitle() {
-		return null;
+		return noteTitle;
 	}
 
 	public void setNoteTitle(String string) {
+		this.noteTitle=noteTitle;
 
 	}
 
 	public String getNoteContent() {
-		return null;
+		return noteContent;
 	}
 
 	public void setNoteContent(String string) {
+		this.noteContent=noteContent;
 
 	}
 
 	public String getNoteStatus() {
-		return null;
+		return noteStatus;
 	}
 
 	public void setNoteStatus(String string) {
+		this.noteStatus=noteStatus;
 
 	}
 
 	public LocalDateTime getCreatedAt() {
-		return null;
+		return createdAt;
 	}
 
 	public void setCreatedAt(LocalDateTime localdatetime) {
+		this.createdAt=createdAt;
 
 	}
 
@@ -64,6 +75,7 @@ public class Note {
 
 	@Override
 	public String toString() {
-		return null;
+		return "Note [noteId=" + noteId + ", noteTitle=" + noteTitle + ", noteContent=" + noteContent + ", noteStatus="
+				+ noteStatus + ", createdAt=" + createdAt + "]";
 	}
 }
